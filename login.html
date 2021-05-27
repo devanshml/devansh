@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>HOME WORK</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="background-image:url(https://wallpaperaccess.com/full/1538138.gif);height: 50rem;width: 80rem;">
+        <form id="myform">
+            <h3>
+                <label style="color: white;">Enter your email/phone number</label>
+                <br />
+                <input type="text" id="myId" required/>
+                <br />
+                <label style="color: white;">Enter your password</label>
+                <br />
+                <input type="password" required/>
+                <br />
+                <button onclick="Login()">Click here for login</button>
+                <br />
+                <h2>
+                    <a style="color: blue" href="signup.html">CLICK FOR SIGNUP</a>
+                </h2>
+            </h3>
+    </div>
+    <script>
+        function login() {
+            var obj = document.getElementById("myId");
+            var typeobj = obj.value;
+
+            var phone = Number(typeobj);
+            if (isNan(phone)) {
+                console.log("String:", typeObj);
+
+            } else {
+                console.log("Number:", Phone)
+            }
+        }
+    </script>
+</body>
+
+</html>

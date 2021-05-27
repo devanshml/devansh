@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>HOME WORK</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-image:url(https://wallpaperaccess.com/full/1538138.gif);height: 50rem;width: 80rem;">
+        <form id="myform">
+            <h3>
+                <label style="color: white;">First Name</label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <label style="color: white;">Last Name</label>
+                <br />
+                <input type="First Name" id="myId" required/>
+                <input type="Second Name" required/>
+                <br />
+                <label style="color: white;">Enter email</label>
+                <br />
+                <input type="email" required/>
+                <br />
+                <label style="color: white;">Enter phone number</label>
+                <br />
+                <input type="number" required/>
+                <br />
+                <input type="radio" id="male" name="gender" value="male">
+                <label style="color: white;" for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label style="color: white;" for="female">Female</label><br>
+                <label style="color: white;">Enter password</label>
+                <br />
+                <input type="Password" required/>
+                <br />
+                <label style="color: white;">Confirm password</label>
+                <br />
+                <input type="password" required/>
+                <br />
+
+                <button onclick="Signup()">Click here for signup</button>
+            </h3>
+            <h2>
+
+                <a style="color: blue;" href="login.html"> CLICK FOR LOGIN</a>
+            </h2>
+    </div>
+
+    <script>
+        function Signup() {
+            var obj = document.getElementById("myId");
+            var typeobj = obj.value;
+
+            var phone = Number(typeobj);
+            if (isNan(phone)) {
+                console.log("String:", typeObj);
+
+            } else {
+                console.log("Number:", Phone)
+            }
+        }
+    </script>
+
+
+</body>
+
+
+</html>
